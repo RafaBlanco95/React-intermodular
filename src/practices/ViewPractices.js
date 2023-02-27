@@ -32,7 +32,7 @@ export default function ViewPractice() {
 
     useEffect(() => {
         loadPractice()
-    }, [])
+    })
 
     const loadPractice = async () => {
         const result = await axios.get(`https://rafa-blanco-spring-intermodular.up.railway.app/api/practicas/${id}`)

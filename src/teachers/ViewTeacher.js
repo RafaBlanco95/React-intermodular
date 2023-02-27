@@ -22,7 +22,7 @@ export default function ViewTeacher() {
 
     useEffect(() => {
         loadTeacher()
-    }, [])
+    })
 
     const loadTeacher = async () => {
         const result = await axios.get(`https://rafa-blanco-spring-intermodular.up.railway.app/api/profesores/${id}`)

@@ -22,7 +22,7 @@ export default function EditTeacher() {
 
         useEffect(()=>{
             loadTeacher()
-        },[])
+        })
 
         const onSubmit= async(e)=>{
             e.preventDefault();

@@ -1,11 +1,10 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react'
-import { Link, useNavigate, useParams } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
 
 
 export default function MatchPractice() {
 
-    let navigate=useNavigate()
 
     const [practice, setPractice] = useState({
         
@@ -34,7 +33,7 @@ export default function MatchPractice() {
 
     useEffect(() => {
         loadPractice()
-    }, [])
+    })
 
     const loadPractice = async () => {
         const result = await axios.get(`https://rafa-blanco-spring-intermodular.up.railway.app/api/practicas/${id2}`)

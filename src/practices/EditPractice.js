@@ -21,7 +21,7 @@ export default function EditPractice() {
 
         useEffect(()=>{
             loadPractice()
-        },[])
+        })
 
         const onSubmit= async(e)=>{
             e.preventDefault();

@@ -21,7 +21,7 @@ export default function EditStudent() {
 
         useEffect(()=>{
             loadStudent()
-        },[])
+        })
 
         const onSubmit= async(e)=>{
             e.preventDefault();

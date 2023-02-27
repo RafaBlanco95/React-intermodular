@@ -25,7 +25,7 @@ export default function ViewExams() {
 
     useEffect(() => {
         loadExam()
-    }, [])
+    })
 
     const loadExam = async () => {
         const result = await axios.get(`https://rafa-blanco-spring-intermodular.up.railway.app/api/controles/${id}`)

@@ -22,7 +22,7 @@ export default function EditExam() {
 
         useEffect(()=>{
             loadExam()
-        },[])
+        })
 
         const onSubmit= async(e)=>{
             e.preventDefault();
