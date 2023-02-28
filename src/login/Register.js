@@ -48,7 +48,7 @@ export default function Register() {
                             </label>
                             <input type={"password"} className="form-control" placeholder='pass' name="password" value={password} onChange={(e) => onInputChange(e)} />
                         </div>
-                        <button type="submit" className='btn btn-outline-primary'>Registrarse</button>
+                        <button type="submit" className='btn btn-outline-primary'>Registrar Nuevo Usuario</button>
                         <Link className='btn btn-outline-danger mx-2' to="/profile">Volver</Link>
                     </form>
                 </div>
