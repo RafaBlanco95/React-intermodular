@@ -40,7 +40,7 @@ function App() {
 
   const { token, setToken } = useToken();
 
-  if (!token) {
+  if (!token?.id) {
     return <Login setToken={setToken} />
   }
 
@@ -81,6 +81,7 @@ function App() {
           <Route exact path="/profile" element={<Profile token={token}/>} />
           <Route exact path="/edituser/:id" element={<EditUser token={token}/>} />
           <Route exact path="/profile/:id" element={<ProfileUpdated/>} />
+          <Route exact path="/login" element={<Login />} />
          
         </Routes>
 

@@ -2,6 +2,8 @@
 import React, { useState } from 'react'
 
 
+
+
 async function loginUser(credentials) {
  return fetch('https://rafa-blanco-spring-intermodular.up.railway.app/api/usuarios/iniciarSesion', {
    method: 'POST',
@@ -14,6 +16,7 @@ async function loginUser(credentials) {
 }
 export default function Login({setToken}) {
 
+   
 
     const [username, setUserName] = useState();
     const [password, setPassword] = useState();
@@ -26,6 +29,10 @@ export default function Login({setToken}) {
         });
       
         setToken(token);
+
+       
+       console.log(token?.id,"pruebas")
+        
       }
 
       

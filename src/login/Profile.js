@@ -10,7 +10,8 @@ export default function Profile(token) {
     function handleToken() {
         const algo = sessionStorage.removeItem('token');
         navigate("/home")
-        window.location.reload();
+        window.close();
+       // window.location.reload();
         return algo;
     }
     console.log(token)
