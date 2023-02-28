@@ -10,8 +10,8 @@ export default function Home() {
 
      
       
-      <div class="container mt-5">
-      <h2>Proyecto Tiberio <i class="fa-solid fa-graduation-cap"></i></h2>
+      <div class="container mt-5 mb-5">
+      <h2>Proyecto Intermodular 2ºDAM: Tiberio <i class="fa-solid fa-graduation-cap"></i></h2>
       </div>
       
      
@@ -28,10 +28,10 @@ export default function Home() {
               <img src="nervion.png" class="d-block w-100" alt="..." />
             </div>
             <div class="carousel-item">
-              <img src="nervion.png" class="d-block w-100" alt="..." />
+              <img src="clases.PNG" class="d-block w-100" alt="..." />
             </div>
             <div class="carousel-item">
-              <img src="nervion.png" class="d-block w-100" alt="..." />
+              <img src="alumnoController.PNG" class="d-block w-100" alt="..." />
             </div>
           </div>
           <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">

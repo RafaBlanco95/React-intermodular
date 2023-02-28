@@ -1,12 +1,15 @@
 
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 
 
 export default function Profile(token) {
 
+    let navigate = useNavigate()
+
     function handleToken() {
         const algo = sessionStorage.removeItem('token');
+        navigate("/home")
         window.location.reload();
         return algo;
     }

@@ -38,7 +38,7 @@ export default function Navbar(token) {
             <form class="d-flex">
             
             
-              <Link class="btn btn-success" to={"/profile"}><span> <b> {token.token.username}</b></span><i class="fa-solid text-light fa-user-tie"></i></Link>
+              <Link class="btn btn-success" to={"/profile"}> <b> {token.token.username}</b> | <i class="fa-solid fa-user"></i></Link>
             </form>
             
             
