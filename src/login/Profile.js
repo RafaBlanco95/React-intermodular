@@ -10,8 +10,7 @@ export default function Profile(token) {
     function handleToken() {
         const algo = sessionStorage.removeItem('token');
         navigate("/home")
-        window.close();
-       // window.location.reload();
+        window.location.reload();
         return algo;
     }
     console.log(token)
@@ -39,9 +38,9 @@ export default function Profile(token) {
                                 </li>
                             </ul>
                         </div>
-                        <Link className="btn btn-outline-primary mx-2" to={`/edituser/${token.token.id}`}>Editar</Link>
-                        <button className="btn btn-warning mx-2" onClick={handleToken}>Cerrar Sesión</button>
-                        <Link className="btn btn-outline-info mx-2" to={"/register"}>Registrar Usuario Nuevo</Link>
+                        <Link className="btn btn-primary mx-2" to={`/edituser/${token.token.id}`}>Editar</Link>
+                        <button className="btn btn-danger mx-2" onClick={handleToken}>Cerrar Sesión</button>
+                        <Link className="btn btn-outline-primary mx-2" to={"/register"}>Registrar Usuario Nuevo</Link>
 
                     </div>
                     <Link className="btn btn-primary my-2" to={"/home"}>Volver</Link>
