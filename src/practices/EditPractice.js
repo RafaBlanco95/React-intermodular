@@ -21,7 +21,8 @@ export default function EditPractice() {
 
         useEffect(()=>{
             loadPractice()
-        })
+            // eslint-disable-next-line react-hooks/exhaustive-deps
+        },[])
 
         const onSubmit= async(e)=>{
             e.preventDefault();

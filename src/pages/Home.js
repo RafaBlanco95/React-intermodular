@@ -2,9 +2,10 @@ import React from 'react'
 
 
 export default function Home() {
-  
-    return (
-       <div>Hello world!</div>
-      )
-    }
-    
+
+  return (
+    <div class="container">
+      <img class="d-block w-100"src='nervion.png' alt="colegio"></img>
+    </div>
+  )
+}

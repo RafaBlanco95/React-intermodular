@@ -33,7 +33,8 @@ export default function ViewStudent() {
 
     useEffect(() => {
         loadStudent()
-    })
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    },[])
 
     const loadStudent = async () => {
         const result = await axios.get(`https://rafa-blanco-spring-intermodular.up.railway.app/api/alumnos/${id}`)

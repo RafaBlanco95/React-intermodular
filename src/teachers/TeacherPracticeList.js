@@ -10,6 +10,7 @@ export default function TeacherPracticeList() {
 
     useEffect(() => {
         loadPractices();
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
     const loadPractices = async () => {

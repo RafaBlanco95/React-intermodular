@@ -32,7 +32,8 @@ export default function ViewPractice() {
 
     useEffect(() => {
         loadPractice()
-    })
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    },[])
 
     const loadPractice = async () => {
         const result = await axios.get(`https://rafa-blanco-spring-intermodular.up.railway.app/api/practicas/${id}`)

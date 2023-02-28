@@ -25,7 +25,8 @@ export default function ViewExams() {
 
     useEffect(() => {
         loadExam()
-    })
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    },[])
 
     const loadExam = async () => {
         const result = await axios.get(`https://rafa-blanco-spring-intermodular.up.railway.app/api/controles/${id}`)

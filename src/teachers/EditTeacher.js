@@ -22,7 +22,8 @@ export default function EditTeacher() {
 
         useEffect(()=>{
             loadTeacher()
-        })
+            // eslint-disable-next-line react-hooks/exhaustive-deps
+        },[])
 
         const onSubmit= async(e)=>{
             e.preventDefault();
