@@ -31,13 +31,12 @@ export default function ProfileUpdated() {
   
     return (
         <div className="container">
-            <div className='row'>
-                <div className='col-md-6 offset-md-3 border rounded p-4 mt-2 shadow'>
+            <div className='row mb-5'>
+                <div className='col-md-6 offset-md-3 border rounded p-4 mt-5 shadow'>
                     <h2 className='text-center m-4'>Perfil Modificado</h2>
                     <div className='card'>
                         <div className='card-header'>
-                            Nº de Usuario
-                            {user.id}
+                            
                             <ul className='list-group list-group-flush'>
                                 <li className='list-group-item'>
                                     <b>Nombre de Usuario: </b>

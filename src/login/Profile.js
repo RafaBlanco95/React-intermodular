@@ -13,8 +13,8 @@ export default function Profile(token) {
     console.log(token)
     return (
         <div className="container">
-            <div className='row'>
-                <div className='col-md-6 offset-md-3 border rounded p-4 mt-2 shadow'>
+            <div className='row mb-5'>
+                <div className='col-md-6 offset-md-3 border rounded p-4 mt-5 shadow'>
                     <h2 className='text-center m-4'>Perfil de usuario</h2>
                     <div className='card'>
                         <div className='card-header'>
