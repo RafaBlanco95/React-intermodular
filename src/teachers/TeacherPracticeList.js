@@ -43,7 +43,7 @@ export default function TeacherPracticeList() {
                                     <td>{practice.titulo}</td>
                                     <td>{practice.dificultad}</td>
                                     <td>
-                                        <Link className="btn btn-primary mx-2" to={`/teachers/${id}/asignpractice/${practice.codigoPractica}`}>Registrar Resultado</Link>
+                                        <Link className="btn btn-primary mx-2" to={`/teachers/${id}/asignpractice/${practice.codigoPractica}`}>Asignar Práctica</Link>
                                        
                                     </td>
                                 </tr>

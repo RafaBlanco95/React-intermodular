@@ -5,10 +5,6 @@ import { Link } from 'react-router-dom'
 
 export default function Navbar(token) {
 
-  function handleToken(){
-    const algo=sessionStorage.removeItem('token');
-    return algo;
-  }
 
  
  
@@ -16,7 +12,7 @@ export default function Navbar(token) {
     <div>
       <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
         <div class="container-fluid">
-          <Link class="navbar-brand" to="/">Tiberio</Link>
+          <Link class="navbar-brand" to="/">Tiberio <i class="fa-solid fa-graduation-cap"></i></Link>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -38,16 +34,11 @@ export default function Navbar(token) {
                 <Link class="nav-link" to="/practices">Prácticas </Link>
               </li>
             </ul>
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-             
-                <Link class="nav-link" to={"/profile"}>Perfil </Link>
-              </li>
-              </ul>
+            
             <form class="d-flex">
             
-              
-              <button class="btn btn-outline-success" onClick={handleToken}>LogOut</button>
+            
+              <Link class="btn btn-success" to={"/profile"}><span> <b> {token.token.username}</b></span><i class="fa-solid text-light fa-user-tie"></i></Link>
             </form>
             
             

@@ -25,9 +25,9 @@ export default function AddPractice() {
 
     return (
         <div className="container">
-            <div className='row'>
-                <div className='col-md-6 offset-md-3 border rounded p-4 mt-2 shadow'>
-                    <h2 className='text-center m-4'>Registrar una nueva Práctica</h2>
+            <div className='row mb-5'>
+                <div className='col-md-6 offset-md-3 border rounded p-4 mt-5 shadow'>
+                    <h2 className='text-center m-4'>Registrar Nueva Práctica</h2>
                     <form onSubmit={(e) => onSubmit(e)}>
                         <div className='mb-3'>
                             <label htmlFor='titulo' className='form-label'>
@@ -39,7 +39,7 @@ export default function AddPractice() {
                             <label htmlFor='Dificultad de la Práctica' className='form-label'>
                                 Dificultad
                             </label>
-                            <input type={"text"} className="form-control" placeholder='Dificultad de la Práctica' name="dificultad" value={dificultad} onChange={(e) => onInputChange(e)} />
+                            <input type={"number"} className="form-control" placeholder='Dificultad de la Práctica' name="dificultad" value={dificultad} onChange={(e) => onInputChange(e)} />
                         </div>
                         <button type="submit" className='btn btn-outline-primary'>Registrar</button>
                         <Link className='btn btn-outline-danger mx-2' to="/practices">Cancelar</Link>

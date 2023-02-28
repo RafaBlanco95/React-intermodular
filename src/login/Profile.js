@@ -5,6 +5,11 @@ import { Link } from 'react-router-dom'
 
 export default function Profile(token) {
 
+    function handleToken() {
+        const algo = sessionStorage.removeItem('token');
+        window.location.reload();
+        return algo;
+    }
     console.log(token)
     return (
         <div className="container">
@@ -13,7 +18,7 @@ export default function Profile(token) {
                     <h2 className='text-center m-4'>Perfil de usuario</h2>
                     <div className='card'>
                         <div className='card-header'>
-                        <b> Nº de Usuario:</b> 
+                            <b> Nº de Usuario:</b>
                             {token.token.id}
                             <ul className='list-group list-group-flush'>
                                 <li className='list-group-item'>
@@ -31,7 +36,9 @@ export default function Profile(token) {
                             </ul>
                         </div>
                         <Link className="btn btn-outline-primary mx-2" to={`/edituser/${token.token.id}`}>Editar</Link>
-                        <Link className="btn btn-outline-primary mx-2" to={"/register"}>Registrar Usuario Nuevo</Link>
+                        <button className="btn btn-warning mx-2" onClick={handleToken}>Cerrar Sesión</button>
+                        <Link className="btn btn-outline-info mx-2" to={"/register"}>Registrar Usuario Nuevo</Link>
+
                     </div>
                     <Link className="btn btn-primary my-2" to={"/home"}>Volver</Link>
                 </div>

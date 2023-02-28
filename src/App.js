@@ -35,6 +35,7 @@ import EditUser from './login/EditUser';
 import ProfileUpdated from './login/ProfileUpdated';
 
 
+
 function App() {
 
   const { token, setToken } = useToken();
@@ -42,6 +43,8 @@ function App() {
   if (!token) {
     return <Login setToken={setToken} />
   }
+
+  
 
   return (
 
@@ -78,7 +81,7 @@ function App() {
           <Route exact path="/profile" element={<Profile token={token}/>} />
           <Route exact path="/edituser/:id" element={<EditUser token={token}/>} />
           <Route exact path="/profile/:id" element={<ProfileUpdated/>} />
-          
+         
         </Routes>
 
         <Footer />

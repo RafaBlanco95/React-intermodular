@@ -46,7 +46,7 @@ export default function ViewPractice() {
                     <h2 className='text-center m-4'>Detalles de la Prácica</h2>
                     <div className='card'>
                         <div className='card-header'>
-                            Ficha de la Práctica con nº:
+                        <b>Ficha de la Práctica con Nº:</b>
                             {practice.codigoPractica}
                             <ul className='list-group list-group-flush'>
                                 <li className='list-group-item'>

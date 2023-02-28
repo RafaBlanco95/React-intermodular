@@ -24,6 +24,7 @@
   
   .footer-basic ul a:hover {
     opacity:1;
+    color: rgb(24, 219, 144);
   }
   
   .footer-basic .social {

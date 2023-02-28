@@ -25,8 +25,8 @@ export default function AddExam() {
 
     return (
         <div className="container">
-            <div className='row'>
-                <div className='col-md-6 offset-md-3 border rounded p-4 mt-2 shadow'>
+            <div className='row mb-5'>
+                <div className='col-md-6 offset-md-3 border rounded p-4 mt-5 shadow'>
                     <h2 className='text-center m-4'>Registrar un nuevo Examen</h2>
                     <form onSubmit={(e) => onSubmit(e)}>
                         <div className='mb-3'>
@@ -39,13 +39,13 @@ export default function AddExam() {
                             <label htmlFor='preguntas' className='form-label'>
                                 Nº de Preguntas
                             </label>
-                            <input type={"text"} className="form-control" placeholder='5' name="preguntas" value={preguntas} onChange={(e) => onInputChange(e)} />
+                            <input type={"number"} className="form-control" placeholder='5' name="preguntas" value={preguntas} onChange={(e) => onInputChange(e)} />
                         </div>
                         <div className='mb-3'>
                             <label htmlFor='preguntas' className='form-label'>
                                 Fecha
                             </label>
-                            <input type={"text"} className="form-control" placeholder='2023-02-23' name="fecha" value={fecha} onChange={(e) => onInputChange(e)} />
+                            <input type={"date"} className="form-control" placeholder='2023-02-23' name="fecha" value={fecha} onChange={(e) => onInputChange(e)} />
                         </div>
                         <button type="submit" className='btn btn-outline-primary'>Registrar</button>
                         <Link className='btn btn-outline-danger mx-2' to="/exams">Cancelar</Link>

@@ -38,8 +38,8 @@ export default function EditPractice() {
 
   return (
     <div className="container">
-        <div className='row'>
-            <div className='col-md-6 offset-md-3 border rounded p-4 mt-2 shadow'>
+        <div className='row mb-5'>
+            <div className='col-md-6 offset-md-3 border rounded p-4 mt-5 shadow'>
                 <h2 className='text-center m-4'>Modificar Práctica</h2>
                 <form onSubmit={(e)=>onSubmit(e)}>
                 <div className='mb-3'>
@@ -52,7 +52,7 @@ export default function EditPractice() {
                     <label htmlFor='dificultad' className='form-label'>
                         Dificultad
                     </label>
-                    <input type={"text"} className="form-control"  placeholder='0-5' name="dificultad" value={dificultad} onChange={(e)=>onInputChange(e)}/>
+                    <input type={"number"} className="form-control"  placeholder='0-5' name="dificultad" value={dificultad} onChange={(e)=>onInputChange(e)}/>
                 </div>
                 <button type="submit" className='btn btn-outline-primary'>Registrar</button>
                 <Link className='btn btn-outline-danger mx-2' to="/practices">Cancelar</Link>

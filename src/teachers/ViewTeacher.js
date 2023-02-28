@@ -31,12 +31,12 @@ export default function ViewTeacher() {
     }
     return (
         <div className="container">
-            <div className='row'>
-                <div className='col-md-6 offset-md-3 border rounded p-4 mt-2 shadow'>
+            <div className='row mb-5'>
+                <div className='col-md-6 offset-md-3 border rounded p-4 mt-5 shadow'>
                     <h2 className='text-center m-4'>Ficha del Profesor</h2>
                     <div className='card'>
                         <div className='card-header'>
-                            Ficha del Profesor con Nº de Docente:
+                        <b>Ficha del Profesor con Nº de Docente:</b>
                             {teacher.numeroDocente}
                             <ul className='list-group list-group-flush'>
                                 <li className='list-group-item'>
@@ -75,16 +75,22 @@ export default function ViewTeacher() {
 
                                     </table>
                                 </li>
-                                <Link className='btn btn-outline-danger mx-2' to={`/teacher/${id}/dopractice`}>Generar Practica</Link>
+                                
 
                             </ul>
+                            <div className='row'>
+                    <Link className='btn btn-outline-success' to={`/teacher/${id}/asignpractice`}>Asignar Practica</Link>
+                    <Link className='btn btn-outline-info' to={`/teacher/${id}/dopractice`}>Generar Practica</Link>
+                    </div>
                         </div>
                         
-                        <Link className='btn btn-outline-danger mx-2' to={`/teacher/${id}/asignpractice`}>Asignar Practica</Link>
-
+                       
+                       
                         
             
                     </div>
+                    
+                   
                     <Link className="btn btn-primary my-2" to={"/teachers"}>Volver</Link>
                 </div>
 

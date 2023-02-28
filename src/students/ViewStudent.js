@@ -42,12 +42,12 @@ export default function ViewStudent() {
     }
     return (
         <div className="container">
-            <div className='row'>
-                <div className='col-md-6 offset-md-3 border rounded p-4 mt-2 shadow'>
+            <div className='row mb-5'>
+                <div className='col-md-8 offset-md-2 border rounded p-4 mt-3 shadow'>
                     <h2 className='text-center m-4'>Ficha del Alumno</h2>
                     <div className='card'>
                         <div className='card-header'>
-                            Ficha del Alumno con nº de matrícula:
+                        <b>Ficha del Alumno con Nº de matrícula:</b>
                             {student.matricula}
                             <ul className='list-group list-group-flush'>
                                 <li className='list-group-item'>
