@@ -57,7 +57,7 @@ export default function Login({setToken}) {
                             <label  className='form-label'>
                                 Contraseña
                             </label>
-                            <input type={"text"} className="form-control"  onChange={(e) => setPassword(e.target.value)} />
+                            <input type={"password"} className="form-control"  onChange={(e) => setPassword(e.target.value)} />
                         </div>
                         <button type="submit" className='btn btn-outline-primary'>Iniciar Sesión</button>
                        
