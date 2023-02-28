@@ -20,7 +20,7 @@ export default function Register() {
 
     const onSubmit = async (e) => {
         e.preventDefault();
-        await axios.post("http://localhost:8886/api/usuarios/nuevo", user)
+        await axios.post("https://rafa-blanco-spring-intermodular.up.railway.app/api/usuarios/nuevo", user)
         navigate("/home")
     }
 

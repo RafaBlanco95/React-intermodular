@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 
 
 async function loginUser(credentials) {
- return fetch('http://localhost:8886/api/usuarios/iniciarSesion', {
+ return fetch('https://rafa-blanco-spring-intermodular.up.railway.app/api/usuarios/iniciarSesion', {
    method: 'POST',
    headers: {
      'Content-Type': 'application/json'

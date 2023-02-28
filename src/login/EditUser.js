@@ -24,7 +24,7 @@ export default function EditUser(token) {
 
         useEffect(()=>{
             const loadUser=async ()=>{
-                const result=await axios.get(`http://localhost:8886/api/usuarios/${id}`)
+                const result=await axios.get(`https://rafa-blanco-spring-intermodular.up.railway.app/api/usuarios/${id}`)
                 setUser(result.data)
             };
             loadUser();
@@ -33,7 +33,7 @@ export default function EditUser(token) {
 
         const onSubmit= async(e)=>{
             e.preventDefault();
-            await axios.put(`http://localhost:8886/api/usuarios/modificar/${id}`,user)
+            await axios.put(`https://rafa-blanco-spring-intermodular.up.railway.app/api/usuarios/modificar/${id}`,user)
             navigate(`/profile/${id}`)
         }
 
