@@ -34,8 +34,11 @@ export default function Login({setToken}) {
     return (
         <div className="container">
             <div className='row'>
-                <div className='col-md-6 offset-md-3 border rounded p-4 mt-2 shadow'>
-                    <h2 className='text-center m-4'>Inicio de Sesión</h2>
+
+                <div className='col-md-6 offset-md-3 border rounded p-4 mt-5 shadow'>
+                <img class=" w-100"src='nervion.png' alt="colegio"></img>
+                    <h2 className='text-center m-4'>Tiberio: Inicio de Sesión</h2>
+                    
                     <form onSubmit={handleSubmit}>
                         <div className='mb-3'>
                             <label className='form-label'>
@@ -52,6 +55,7 @@ export default function Login({setToken}) {
                         <button type="submit" className='btn btn-outline-primary'>Iniciar Sesión</button>
                        
                     </form>
+                    
                 </div>
             </div>
         </div>
